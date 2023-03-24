@@ -1,5 +1,5 @@
-//BOJ 4134 - SILVER 4
-//https://www.acmicpc.net/problem/4134
+//BOJ 1929 - SILVER 3
+//https://www.acmicpc.net/problem/1929
 #include <iostream>
 #include <cmath>
 using namespace std;
