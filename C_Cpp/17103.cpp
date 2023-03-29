@@ -8,30 +8,29 @@
 
 #include <iostream>
 #include <cmath>
-#include <bitset>
+#define MAX_NUM 1000001
 using namespace std;
 
-uint32_t arr[15625] = {1431655765,}; //bit set all even number is 0. odd number is 1
-
-bool is_prime(int n){
-    if(n<=1) return false;
-    int r = (int)sqrt(n);
-    for(int i = 2; i <= r;i++)
-        if(!(n%i)) return false;
-    return true;
-}
-
-int goldbach_partition(int n){
-    
-}
 
 int main(){
-    cout << bitset<32>(1431655765);
-    int T,N;
-    scanf("%d",&T);
+    ios :: sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int T, N;
+    bool p[MAX_NUM] {1,1};
+    for(int i = 2; i<sqrt(MAX_NUM);i++){
+        if(p[i]) continue;
+        for(int j = i*i; j<MAX_NUM;j+=i) p[j]=true; 
+    }
+
+    cin >> T;
     while(T--){
-        scanf("%d",&N);
-        printf("%d\n",goldbach_partition(N));
+        int s=0;
+        cin >> N;
+        for(int i = 0; i<=N/2;i++){
+            if(!p[i]&&!p[N-i]) s++;
+        }
+        cout << s << "\n";
     }
     return 0;
 }
