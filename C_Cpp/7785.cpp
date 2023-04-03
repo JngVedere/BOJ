@@ -18,6 +18,5 @@ int main(){
     }
     
     for(auto iter = p.rbegin(); iter!=p.rend();iter++) cout << *iter << '\n';
-
     return 0;
 }
