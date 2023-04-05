@@ -1,8 +1,7 @@
-//BOJ 24723 - BRONZE 4 
-//https://www.acmicpc.net/problem/24723
+//BOJ 25192 - SILVER 4 
+//https://www.acmicpc.net/problem/25192
 
 //1st try - 데이터 저격 당함 + O(n^2)의 경우의 수
-//2nd try 
 
 #include <iostream>
 #include <set>
