@@ -12,10 +12,11 @@ inline bool compare(const pair<string,int> & lhs, const pair<string,int> & rhs){
     // else if(lhs.first.length()!=rhs.first.length()) return lhs.first.length() > rhs.first.length();
     // else return !lhs.first.compare(rhs.first);
 
+    //Different Form
     if(lhs.second == rhs.second){
         if(lhs.first.length() == rhs.first.length()) return lhs.first < rhs.first;
         else return lhs.first.length() > rhs.first.length();
-    }else return lhs.second > rhs.second
+    }else return lhs.second > rhs.second;
 }
 
 int main(){

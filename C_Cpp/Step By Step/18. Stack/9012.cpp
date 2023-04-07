@@ -1,7 +1,6 @@
 //BOJ 9012 - SILVER 4
 //https://www.acmicpc.net/problem/9012
 #include <iostream>
-#include <stack>
 using namespace std;
 
 int main(){
