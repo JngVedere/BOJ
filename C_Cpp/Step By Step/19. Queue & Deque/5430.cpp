@@ -1,5 +1,5 @@
-//BOJ 2164 - SILVER 4
-//https://www.acmicpc.net/problem/2164
+//BOJ 5430 - GOLD 5
+//https://www.acmicpc.net/problem/5430
 
 #include <iostream>
 #include <string>
