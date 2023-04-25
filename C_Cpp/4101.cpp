@@ -10,6 +10,5 @@ int main(){
         if(!N1 && !N2) break;
         cout << (N1>N2 ? "Yes\n" : "No\n");
     }
-    
     return 0;
 }
