@@ -1,5 +1,5 @@
-//BOJ 15651 - SILVER 3
-//https://www.acmicpc.net/problem/15651
+//BOJ 15652 - SILVER 3
+//https://www.acmicpc.net/problem/15652
 
 #include <iostream>
 using namespace std;
@@ -11,7 +11,7 @@ void backTrack(int cnt = 0){
     if(cnt == M){
         for(int i = 0; i<M; i++) cout << nums[i] << ' ';
         cout << "\n";
-    }else for(int i = 1; i <= N; i++){ //dfs part
+    }else for(int i = 1; i <= N; i++) if(cnt==0 || nums[cnt-1] <= i){ //dfs part
         checks[i] = 1;
         nums[cnt] = i;
         backTrack(cnt+1);
