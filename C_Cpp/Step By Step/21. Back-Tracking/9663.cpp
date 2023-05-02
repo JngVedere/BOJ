@@ -11,7 +11,6 @@ int promising(int col){
     
     for(int i = 0; i < col; i++){
         if(chess[col] == chess[i] || col - i == abs(chess[col] - chess[i])){
-            
             return 0;
         }
     }
