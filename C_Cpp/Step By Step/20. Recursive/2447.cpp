@@ -37,9 +37,6 @@ void recurse(int n, int row, int col){
     recurse(nxt, row,            col + 2*nxt);
     recurse(nxt, row + nxt,      col + 2*nxt);
     recurse(nxt, row + 2*nxt,    col + 2*nxt);
-    
-    
-
 }
 
 void printStar(){

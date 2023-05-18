@@ -1,4 +1,4 @@
-//BOJ 1463 - SILVER 1
+//BOJ 1463 - SILVER 3
 //https://www.acmicpc.net/problem/1463
 #include <iostream>
 using namespace std; 

@@ -4,9 +4,10 @@
 t = int(input())
 while(t>0):
     lt, wt, le, we = map(int, input().split())
-    f = lt*wt >= le*we
-    if(f):
+    if(lt*wt > le*we):
         print("TelecomParisTech")
-    else:
+    elif(lt*wt < le*we):
         print("Eurecom")
+    else:
+        print("Tie")
     t-=1

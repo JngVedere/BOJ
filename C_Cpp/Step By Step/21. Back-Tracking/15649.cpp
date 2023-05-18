@@ -1,5 +1,5 @@
-//BOJ 15650 - SILVER 3
-//https://www.acmicpc.net/problem/15650
+//BOJ 15649 - SILVER 3
+//https://www.acmicpc.net/problem/15649
 
 #include <iostream>
 using namespace std;
@@ -11,9 +11,9 @@ void backTrack(int cnt = 0){
     if(cnt == M){ //숫자가 끝까지 도달했다는 건 조건에 충족한다는 것
         for(int i = 0; i < M; i++)cout << nums[i] << ' ';
         cout << "\n";
+        return;
 
-    }else for(int i = 1; i <= N; i++) if(!check[i] && (cnt == 0 || nums[cnt - 1] < i)){ //dfs part
-        cout << nums[-1] << endl;
+    }else for(int i = 1; i <= N; i++) if(!check[i]){ //dfs part
         check[i] = 1;
         nums[cnt] = i;
         backTrack(cnt+1);

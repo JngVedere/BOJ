@@ -18,7 +18,7 @@ int main(){
     ios :: sync_with_stdio(false);
     cin.tie(NULL);
     cin >> N;
-    
+
     cout << (int)pow(2,N) - 1 << "\n";
     hanoi(N);
 

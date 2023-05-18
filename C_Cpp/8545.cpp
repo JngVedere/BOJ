@@ -12,5 +12,5 @@ int main(){
     for(int i = l-1; i >= 0; i--){
         cout << s[i];
     }
-    retrun 0;
+    return 0;
 }
