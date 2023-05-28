@@ -2,7 +2,7 @@
 //https://www.acmicpc.net/problem/16139
 #include <iostream>
 using namespace std;
-int count[26][2000] = {0}, sum[26] = {0};
+int count[26][2000] = {0}, sum[26] = {0}, check[26] = {0};
 int N, l, tmp, li, ri, ans;
 string S;
 char ai;
@@ -16,17 +16,22 @@ int main(){
         count[tmp][i] = sum[tmp];
     }
 
-    for(int i = 0; i < 26; i++){
-        cout << (char)(i+'a') << " ";
-        for(int j = 0; j < l; j++) cout << count[i][j] << " ";
-        cout << endl;
-    }
+    cin >> N;
 
     while(N--){
         cin >> ai >> li >> ri;
         tmp = ai - 'a';
+        if(check[tmp] == 0){
+            check[tmp] = 1;
+            for(int i = 1; i < l; i++){
+                if(count[tmp][i] > count[tmp][i-1]) continue;
+                else count[tmp][i] = count[tmp][i-1];
+            }   
+        }
+    
+        li = (li ? li-1 : 0);
         ans = count[tmp][ri] - count[tmp][li];
-        cout << tmp << ' ' <<ans << "\n";
+        cout <<ans << "\n";
     }
     
     return 0;

@@ -1,4 +1,4 @@
-//BOJ 2442 - SILVER 3
+//BOJ 2442 - BRONZ 3
 //https://www.acmicpc.net/problem/2442
 #include <iostream>
 using namespace std;

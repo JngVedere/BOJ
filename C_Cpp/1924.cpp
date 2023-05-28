@@ -1,5 +1,6 @@
 //BOJ 1924 - BRONZ 1
 //https://www.acmicpc.net/problem/1924
+// solved with Zellar's Congruence Theorem
 #include <iostream>
 using namespace std;
 int x,y,res;
