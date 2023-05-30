@@ -2,12 +2,10 @@
 //https://www.acmicpc.net/problem/2530
 #include <iostream>
 using namespace std;
-int a,b,c,d,f;
+int a,b,c,d;
 
 
 int main(){
-    ios :: sync_with_stdio(false);
-    cin.tie(NULL);
     cin >> a >> b >> c >> d;
     c += d;
     b += c/60;
@@ -15,7 +13,6 @@ int main(){
     a %= 24;
     b %= 60;
     c %= 60;
-    
 
     printf("%d %d %d",a,b,c);
 
