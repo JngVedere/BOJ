@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 int t;
+
 int main(){
     cin >> t;
     for(int i = t; i > 0; i--){
