@@ -20,7 +20,7 @@ int main(){
     ios :: sync_with_stdio(false);
     cin.tie(NULL);
     cin >> n;
-    cin >> o;
+    cin >> o; //to get rid of '\n'
     while(n--){
         tmp = 0;
         getline(cin,s);
