@@ -1,4 +1,4 @@
-//BOJ 9501 - BRONZ 4
+//BOJ 9501 - BRONZ 3
 //https://www.acmicpc.net/problem/9501
 #include <iostream>
 using namespace std;

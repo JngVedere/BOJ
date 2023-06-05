@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 int num[5];
-int cnt, lcm, _min = 100;
+int cnt, _min = 100;
 
 int main(){
     ios :: sync_with_stdio(false);
@@ -15,6 +15,7 @@ int main(){
     }
 
     long long tmp = _min;
+
     while(true){
         cnt = 0;
         for(int i = 0; i < 5; i++) if(tmp % num[i] == 0) cnt++;
