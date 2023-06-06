@@ -1,5 +1,5 @@
-//BOJ 20352 - BRONZ 4
-//https://www.acmicpc.net/problem/20352
+//BOJ 21334 - BRONZ 4
+//https://www.acmicpc.net/problem/21335
 #include <iostream>
 #include <cmath>
 #define PI 3.14159265359
