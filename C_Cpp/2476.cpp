@@ -2,7 +2,6 @@
 //https://www.acmicpc.net/problem/2476
 #include <iostream>
 #include <cstring>
-#include <algorithm>
 using namespace std;
 int eye[6];
 int N, t, credit, check, ans = 0, tmp;
