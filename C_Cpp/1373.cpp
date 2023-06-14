@@ -3,9 +3,15 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-string s,o;
-int n,l, d=0, b=1;
+string s,o,tmp;
+int l;
 
 int main(){
     ios :: sync_with_stdio(false);
     cin.tie(NULL);
+    cin >> s;
+    l = s.length();
+    for(int i = l-1; i >= 2; i-=3){
+        tmp = s[i] + s[i-1] + s[i-2];
+    }
+}
