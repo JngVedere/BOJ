@@ -10,7 +10,8 @@ int main(){
 
     cin >> s >> m;
     x = (s + m) / 2;
-    y = s - x;
-    if(x < 0 || y < 0) cout << -1;
-    else cout << x << " " << y;
+    y = (s - m) / 2;
+    if(s < m) cout << -1;
+    else if(x+y == s && x-y == m) cout << x << " " << y;
+    else cout << -1;
 }
