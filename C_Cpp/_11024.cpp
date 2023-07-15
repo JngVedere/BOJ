@@ -4,20 +4,21 @@
 #include <sstream>
 using namespace std;
 int T, sum, num;
-string s, tmp;
-stringstream ss;
+string s, tmp, trash;
+
 
 int main(){
     ios :: sync_with_stdio(false);
     cin.tie(NULL);
 
     cin >> T;
+    getline(cin, trash);
     while(T--){
         sum = 0;
-        cin >> s;
-        ss.str(s);
+        getline(cin, s);
+        stringstream ss(s);
         while(ss >> num) sum += num;
         cout << sum << "\n";
-        ss.str("");
+
     }
 }
