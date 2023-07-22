@@ -1,5 +1,5 @@
-// BOJ 10996 - BRONZ 2
-// https://www.acmicpc.net/problem/10996
+// BOJ 10995 - BRONZ 3
+// https://www.acmicpc.net/problem/10995
 #include <iostream>
 using namespace std;
 bool flag;
@@ -27,7 +27,7 @@ int main(){
     }
 
     //Print
-    for(int i = 1; i <= 2 * N; i++){
+    for(int i = 1; i <= N; i++){
         if(i%2==0) cout << e << "\n";
         else cout << o << "\n";
     }
