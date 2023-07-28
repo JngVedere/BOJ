@@ -19,10 +19,15 @@ int main(){
         lng = snt.length();
 
         for(int i = 0; i < lng; i++){
-            if(snt[i] != ' ') alpha[snt[i]-'A'] = 1;
+            if(snt[i] == ' ') continue;
+            alpha[snt[i]-'a'] = 1;
         }
 
-        bool exists = count(begin(alpha), end(alpha), 0) > 0;
-        cout << (exists ? "N\n" : "Y\n");
+        bool flag = true;
+        for(int i = 0; i < 26; i++){
+            if(alpha[i] == 0) flag = false;
+        }
+
+        cout << (flag ? "Y\n" : "N\n");
     }
 }
