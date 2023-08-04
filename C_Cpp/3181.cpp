@@ -3,28 +3,27 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-int stack = 0;
 bool flag = true;
-char output[101];
 string IGN[10] = {"i", "pa", "te", "ni", "niti", "a", "ali", "nego", "no", "ili"};
-string fir, str, tmp;
+string fir, str, out = "", tmp;
 
 int main(){
     ios :: sync_with_stdio(false);
-    cin.tie(NULL);
-    
-    cin >> fir;
-    output[stack++]= toupper(fir[0]);
+    cin.tie(NULL); 
 
     getline(cin, str);
     stringstream ss(str);
-    while(getline(ss, tmp, ' ')){
+
+    ss >> fir;
+    out += toupper(fir[0]);
+
+    while(ss >> tmp){
         flag = true;
         for(int i = 0; i < 10; i++){
             if(IGN[i] == tmp) flag = false;
         }
-
-        if(flag) output[stack++] = toupper(tmp[0]);
+        if(flag) out += toupper(tmp[0]);
     }
-    cout << output;
+
+    cout << out;
 }
