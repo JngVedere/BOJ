@@ -14,14 +14,14 @@ int main(){
 
     //Init string for odd number
     flag = true;
-    for(int i = 0; i < 2 * N; i++){
+    for(int i = 0; i < N; i++){
         o += (flag ? "*" : " ");
         flag = !flag;
     }
 
     //Init string for even number
     flag = false;
-    for(int i = 0; i < 2 * N; i++){
+    for(int i = 0; i < N; i++){
         e += (flag ? "*" : " ");
         flag = !flag;
     }

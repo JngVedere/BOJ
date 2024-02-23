@@ -1,5 +1,5 @@
-//BOJ 2442 - BRONZ 3
-//https://www.acmicpc.net/problem/2442
+//BOJ 2443 - BRONZ 3
+//https://www.acmicpc.net/problem/2443
 #include <iostream>
 using namespace std;
 int C, N;

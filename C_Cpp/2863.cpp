@@ -1,5 +1,5 @@
-//BOJ 11966 - BRONZ 3
-//https://www.acmicpc.net/problem/11966
+//BOJ 2863 - BRONZ 3
+//https://www.acmicpc.net/problem/2863
 #include <iostream>
 using namespace std;
 long long value;

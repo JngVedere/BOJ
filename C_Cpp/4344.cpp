@@ -7,7 +7,7 @@ double C, tmp[1000], sum, avg, over;
 int main(){
     std::ios :: sync_with_stdio(false);
     std::cin.tie(NULL);
-    
+     
     std::cin >> T;
     std::cout.precision(3);
     std::cout << std::fixed;

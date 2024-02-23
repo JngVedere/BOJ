@@ -1,6 +1,5 @@
-//BOJ 2745 - BRONZE 2
-//https://www.acmicpc.net/problem/2745
-
+//BOJ 11005 - BRONZE 1
+//https://www.acmicpc.net/problem/11005
 #include <iostream>
 #include <string>
 #include <algorithm>

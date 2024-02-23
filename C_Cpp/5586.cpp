@@ -1,5 +1,5 @@
 //BOJ 5586 - BRONZ 2
-//https://www.acmicpc.net/problem/5576
+//https://www.acmicpc.net/problem/5586
 #include <iostream>
 using namespace std;
 int l, j, o;
